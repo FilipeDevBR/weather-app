@@ -1,10 +1,10 @@
 <div class="container" *ngIf="weatherDatasInput">
   <div class="upper-data">
-    <img src="../../../../../assets/sun.jpg" *ngIf="weatherDatasInput.main.temp > 15 && weatherDatasInput.weather[0].id === 800" alt="Sun">
+    <img src="../../../../../assets/sun.jpg" *ngIf="weatherDatasInput.main.temp > 15" alt="Sun">
     <img
       src="../../../../../assets/cloud.jpg"
       *ngIf="weatherDatasInput.main.temp > 15 &&
-      weatherDatasInput.weather[0].id !== 800 &&
+      weatherDatasInput.weather[0].id === 802 &&
       weatherDatasInput.weather[0].main === 'Clouds'" alt="Clouds">
     <img src="../../../../../assets/cold1.jpg" *ngIf="weatherDatasInput.main.temp <= 15" alt="Cold">
     <img src="../../../../../assets/cold2.jpg" *ngIf="weatherDatasInput.main.temp <= 0" alt="Very Cold">
