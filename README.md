@@ -1,27 +1,43 @@
 # WeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.15.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.2.15.
 
-## Development server
+## Servidor de Desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Execute `ng serve` para iniciar um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Code scaffolding
+## Estrutura do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **src/app/modules/weather/components**: Contém os componentes da aplicação.
+- **src/app/services**: Contém os serviços da aplicação.
+- **src/app/models**: Contém os modelos e interfaces da aplicação.
+
+## Chamadas de API
+
+A aplicação faz chamadas para uma API de clima para obter dados meteorológicos. Certifique-se de configurar a URL da API e a chave de API no serviço de clima (`weather.service.ts`).
+
+## Scaffold de Código
+
+Execute `ng generate component component-name` para gerar um novo componente. Você também pode usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Execute `ng build` para compilar o projeto. Os artefatos de build serão armazenados no diretório `dist/`.
 
-## Running unit tests
+## Testes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Testes Unitários
 
-## Running end-to-end tests
+Execute `ng test` para executar os testes unitários via [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Testes End-to-End
 
-## Further help
+Execute `ng e2e` para executar os testes end-to-end via [Protractor](http://www.protractortest.org/).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contribuição
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
+4. Faça um push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
